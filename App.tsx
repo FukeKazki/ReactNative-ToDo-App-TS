@@ -1,19 +1,31 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react'
+import {AppLoading} from 'expo'
+import * as Font from 'expo-font'
+import Home from './src/components/screens/Home'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
-  );
+const loadResourcesAsync = async () => {
+    await Promise.all([
+        Font.loadAsync({
+            'sen-bold': require('./assets/fonts/Sen-Bold.ttf')
+        }),
+    ])
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App: React.FC = () => {
+    const [isLoadingComplete, setLoadingComplete] = useState(false)
+
+    if (!isLoadingComplete) {
+        return (
+            <AppLoading
+                startAsync={loadResourcesAsync}
+                onFinish={() => setLoadingComplete(true)}
+            />
+        )
+    }
+
+    return (
+        <Home />
+    )
+}
+
+export default App
