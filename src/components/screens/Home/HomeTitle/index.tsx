@@ -8,7 +8,7 @@ const HomeTitle: React.FC = () => {
     return (
         <HomeTitleContainer>
             <Title>
-                Todo List
+                Todoアプリ
             </Title>
         </HomeTitleContainer>
     )

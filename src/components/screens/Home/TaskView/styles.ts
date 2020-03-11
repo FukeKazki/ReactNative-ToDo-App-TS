@@ -34,7 +34,7 @@ export const TaskListItem = Styled(ListItem)`
 `
 
 export const TaskTitle = Styled.Text`
-    text-decoration: ${props => props.done ? 'line-through': 'none'};
+    text-decoration: ${props => props.isDone ? 'line-through': 'none'};
     font-family: 'sen-bold';
     marginLeft: 16px;
 `

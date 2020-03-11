@@ -4,6 +4,8 @@ import {
     ButtonTitle
 } from './styles'
 import {ModalContext, TaskContext} from '../../index'
+import Colors from '../../../../../constants/Colors'
+
 
 type TaskAddButtonProps = {
     inputTitle: string
@@ -33,7 +35,7 @@ const TaskAddButton: React.FC<TaskAddButtonProps> = ({inputTitle, setInputTitle}
                 top: 15,
                 right: 20,
                 borderRadius: 20,
-                backgroundColor: 'rgba(240, 194, 78, 1.0)',
+                backgroundColor: Colors.mainColor,
             }}
         >
             <ButtonTitle>Add</ButtonTitle>

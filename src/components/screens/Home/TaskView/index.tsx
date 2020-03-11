@@ -10,6 +10,8 @@ import {
     TaskTitle,
 } from './styles'
 import {TaskContext} from '../index'
+import Colors from '../../../../constants/Colors'
+
 
 const TaskView: React.FC = () => {
     const {taskState, taskDispatch} = useContext(TaskContext)
@@ -23,7 +25,7 @@ const TaskView: React.FC = () => {
                             itemDivider={true}
                         >
                             <CheckBox
-                                color={'rgba(240, 194, 78, 1.0)'}
+                                color={Colors.mainColor}
                                 checked={task.isDone}
                                 onPress={() => {
                                     taskDispatch({

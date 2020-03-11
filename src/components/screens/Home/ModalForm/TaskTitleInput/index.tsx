@@ -1,6 +1,8 @@
 import React from 'react'
 import {Input, Item} from 'native-base'
 import Icon from 'react-native-vector-icons/AntDesign'
+import Colors from '../../../../../constants/Colors'
+
 
 type TaskTitleInputProps = {
     inputTitle: string
@@ -16,7 +18,7 @@ const TaskTitleInput: React.FC<TaskTitleInputProps> = ({inputTitle, setInputTitl
             <Icon
                 name='form'
                 size={25}
-                color={'rgba(240, 194, 78, 1.0)'}
+                color={Colors.mainColor}
             />
             <Input
                 placeholder='task name'

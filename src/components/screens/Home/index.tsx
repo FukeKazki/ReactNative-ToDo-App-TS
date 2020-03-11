@@ -12,12 +12,15 @@ import {taskReducer} from '../../../redux/reducer/task'
 import {modalReducer} from '../../../redux/reducer/modal'
 import {TaskState} from '../../../redux/actions/task'
 import {ModalState} from '../../../redux/actions/modal'
+import Colors from '../../../constants/Colors'
+
 
 const initialTaskState: TaskState[] = [
-    {id: 1, title: 'みちゃ', isDone: false},
+    {id: 1, title: 'ReactNative楽しい', isDone: false},
 ]
 
-export const TaskContext = createContext(null)
+// @ts-ignore
+export const TaskContext = createContext()
 
 const TaskContextProvider = (props) => {
     const [taskState, taskDispatch] = useReducer(taskReducer, initialTaskState)
@@ -33,7 +36,8 @@ const initialModalState: ModalState = {
     isOpening: false
 }
 
-export const ModalContext = createContext(null)
+// @ts-ignore
+export const ModalContext = createContext()
 
 const ModalContextProvider = (props) => {
     const [modalState, modalDispatch] = useReducer(modalReducer, initialModalState)
@@ -48,7 +52,7 @@ const ModalContextProvider = (props) => {
 const Home: React.FC = () => {
 
     return (
-        <Container>
+        <Container style={{backgroundColor: Colors.mainColor}}>
             <Header/>
             <HomeTitle/>
             <ModalContextProvider>

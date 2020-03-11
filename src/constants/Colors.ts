@@ -1,4 +1,4 @@
-const mainColor = 'rgba(240, 194, 78, 1.0)'
+const mainColor = '#F75C2F'
 const subColor = '#fffaf1'
 
 export default {

@@ -4,6 +4,7 @@ import {
     TouchableOpacity,
 } from 'react-native'
 import {ModalContext} from '../../index'
+import Colors from '../../../../../constants/Colors'
 
 const ModalCloseButton: React.FC = () => {
     const {modalDispatch} = useContext(ModalContext)
@@ -14,7 +15,7 @@ const ModalCloseButton: React.FC = () => {
             <Icon
                 name='close'
                 size={30}
-                color={'rgba(240, 194, 78, 1.0)'}
+                color={Colors.mainColor}
                 style={{
                     marginLeft: 20,
                     marginTop: 20,

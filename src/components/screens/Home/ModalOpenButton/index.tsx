@@ -4,6 +4,7 @@ import {
     CircleButton
 } from './styles'
 import {ModalContext} from '../index'
+import Colors from '../../../../constants/Colors'
 
 const ModalOpenButton: React.FC = () => {
     const {modalDispatch} = useContext(ModalContext)
@@ -13,7 +14,7 @@ const ModalOpenButton: React.FC = () => {
         >
             <Icon name='plus'
                   size={30}
-                  color={'rgba(240, 194, 78, 1.0)'}
+                  color={Colors.mainColor}
                   style={{
                       marginTop: 2,
                   }}
