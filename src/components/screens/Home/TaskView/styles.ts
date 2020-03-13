@@ -14,22 +14,15 @@ export const Shadow = Styled.View`
 
 export const TaskList = Styled(List)`
     background-color: #fffaf1;
-    paddingLeft: 0;
-    margin: 0;
-    border-width: 1;
+    border-width: 1px;
     overflow: hidden;
     border-color: #fffaf1;
-    border-radius: 16;
-    padding-top: 20;
-    padding-bottom: 20;
+    border-radius: 16px;
+    padding: 20px 0;
 `
 
 export const TaskListItem = Styled(ListItem)`
-    margin-left: 0;
-    padding-left: 16;
-    padding-right: 16;
-    padding-top: 20;
-    padding-bottom: 20;
+    padding: 20px 16px;
     background-color: #fffaf1;
 `
 

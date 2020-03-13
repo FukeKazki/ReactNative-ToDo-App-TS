@@ -1,4 +1,4 @@
-const mainColor = '#F75C2F'
+const mainColor = '#F17C67'
 const subColor = '#fffaf1'
 
 export default {
