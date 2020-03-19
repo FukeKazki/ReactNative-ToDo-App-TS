@@ -3,8 +3,8 @@ import {Button} from "native-base"
 import {
     ButtonTitle
 } from './styles'
-import {ModalContext, TaskContext} from '../../index'
-import Colors from '../../../../../constants/Colors'
+import {ModalContext, TaskContext} from '../../screens/Home'
+import Colors from '../../../constants/Colors'
 
 
 type TaskAddButtonProps = {

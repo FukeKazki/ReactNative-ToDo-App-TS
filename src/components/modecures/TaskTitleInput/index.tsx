@@ -1,7 +1,7 @@
 import React from 'react'
 import {Input, Item} from 'native-base'
 import Icon from 'react-native-vector-icons/AntDesign'
-import Colors from '../../../../../constants/Colors'
+import Colors from '../../../constants/Colors'
 
 
 type TaskTitleInputProps = {

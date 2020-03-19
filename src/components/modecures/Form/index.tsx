@@ -3,7 +3,7 @@ import {
     FormContainer,
     FormTop,
     FormContent,
-} from '../styles'
+} from '../../organisms/Home/ModalForm/styles'
 
 import ModalCloseButton from '../ModalCloseButton'
 import TaskAddButton from '../TaskAddButton'

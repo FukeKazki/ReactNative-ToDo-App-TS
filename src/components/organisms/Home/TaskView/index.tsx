@@ -9,7 +9,7 @@ import {
     TaskListItem,
     TaskTitle,
 } from './styles'
-import {TaskContext} from '../index'
+import {TaskContext} from '../../../screens/Home'
 import Colors from '../../../../constants/Colors'
 
 

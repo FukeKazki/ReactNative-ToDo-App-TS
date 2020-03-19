@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import Modal from 'react-native-modal'
-import Form from './Form'
-import {ModalContext} from '../index'
+import Form from '../../../modecures/Form'
+import {ModalContext} from '../../../screens/Home'
 
 const ModalForm: React.FC = () => {
     const {modalState, modalDispatch} = useContext(ModalContext)

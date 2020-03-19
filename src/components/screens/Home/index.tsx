@@ -3,10 +3,10 @@ import {Container} from 'native-base'
 
 import Header from '../../organisms/Header'
 
-import HomeTitle from './HomeTitle'
-import TaskView from './TaskView'
-import ModalOpenButton from './ModalOpenButton'
-import ModalForm from './ModalForm'
+import HomeTitle from '../../modecures/HomeTitle'
+import TaskView from '../../organisms/Home/TaskView'
+import ModalOpenButton from '../../modecures/ModalOpenButton'
+import ModalForm from '../../organisms/Home/ModalForm'
 
 import {taskReducer} from '../../../redux/reducer/task'
 import {modalReducer} from '../../../redux/reducer/modal'
