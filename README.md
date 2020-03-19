@@ -1,6 +1,6 @@
 # タスクアプリ
 
-!['gif'](./images/output-palette.gif)
+<p align='center'><img src='./images/output-palette.gif' /></p>
 
 <p align='center'>関連ブログ:  https://gitpress.io/@fukke0906/2020-03-11 </p>
 
